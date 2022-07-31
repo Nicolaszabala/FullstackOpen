@@ -1,12 +1,18 @@
 
-Link to Websequence: https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgU3VibWl0dGluZyBGb3JtCgpCcm93c2VyLT5TZXJ2ZXI6ABoIcyBuZXcgbm90ZQpub3RlIHJpZ2h0IG9mIAAfCQArBSB0aGlua3MgYWJvdXQgaXQKABAHLT4gAFMHOiBSZXNwb25zZSBjb2RlIEhUVFAgMzAyICAgAFQGbGVmAFQFACcJAIEMByByZWxvYWRzIHRoZSBOb3RlcyBwYWdlLgCBKQoAgQELbmRzAFQGcmVxdWVzdHM6IGdldCAobWFpbi5jc3MpLAAFB2pzKSBhbmQgKGRhdGEuanNvbikuAIFEHmNyZWF0ZXMgYQCCCQkgb2JqZWN0AEMFYWRkcyBpdCB0byBhbiBhcnJheSBjYWxsZWQAgjgFcy4AgX4UAIEqBnVwZGF0ZWQAgVUHUGFnZQo&s=default
+Link to Diagram IMG: https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgU3VibWl0dGluZyBGb3JtCgpCcm93c2VyLT5TZXJ2ZXI6ABoIcyBuZXcgbm90ZQpub3RlIHJpZ2h0IG9mIAAfCQArBSB0aGlua3MgYWJvdXQgaXQKABAHLT4gAFMHOiBSZXNwb25zZSBjb2RlIEhUVFAgMzAyICAgAFQGbGVmAFQFACcJAIEMByByZWxvYWRzIHRoZSBOb3RlcyBwYWdlLgCBKQoAgQELbmRzAFQGcmVxdWVzdHM6IGdldCAobWFpbi5jc3MpLAAFB2pzKSBhbmQgKGRhdGEuanNvbikuAIFEHmNyZWF0ZXMgYQCCCQkgb2JqZWN0AEMFYWRkcyBpdCB0byBhbiBhcnJheSBjYWxsZWQAgjgFcy4AgX4UAIEqBnVwZGF0ZWQAgVUHUGFnZQo&s=default
 
 title Submitting Form
 
 Browser->Server: Submitts new note
+
 note right of Server: Server thinks about it
+
 Server -> Browser: Response code HTTP 302   
+
 note left of Browser: Browser reloads the Notes page.
+
 Browser-> Server: Sends HTTP requests: get (main.css), (main.js) and (data.json).
+
 note right of Server: Server creates a new note object and adds it to an array called notes.
+
 Server -> Browser: Sends updated Notes Page
