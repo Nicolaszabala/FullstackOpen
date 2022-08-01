@@ -1,0 +1,15 @@
+Link to diagram IMG:https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgTmV3IE5vdGUgU1BBIAoKQnJvd3NlciAtPiBTZXJ2ZXI6IFBPU1QgaHR0cHM6Ly9zdHVkaWVzLmNzLmhlbHNpbmtpLmZpL2V4YW1wbGVhcHAvbmV3X25vdGVfc3BhCm5vdGUgcmlnaHQgb2YASQlSZWNlaXZlcyBKU09OIGRhdGEKAGcGIC0-IAB7BzogU2VuZHMgMjAxIENyZWF0ZWQgc3RhdGUgY29kZQBTBmxlZgBTBQAqCUphdmFTY3JpcHQgZXZlbnQgaGFuZGxlciBjAD0FcyBhbmQgcHVzaGVzIHRoZSBuZXcgbm90ZQCBYxRIVFRQAIF2BnJlcXVlc3QgIACBOBdhAIFDBi1zdHJpbmcKCgo&s=default
+
+title New Note SPA 
+
+Browser -> Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note right of Server: Receives JSON data
+
+Server -> Browser: Sends 201 Created state code
+
+note left of Browser: JavaScript event handler creates and pushes the new note
+
+Browser -> Server: HTTP POST request  
+
+note right of Server: as JSON-string
