@@ -1,8 +1,22 @@
-Link to Diagram IMG: https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgU1BBIAoKQnJvd3NlciAtPiBTZXJ2ZXI6IEhUVFAgR0VUIGh0dHBzOi8vc3R1ZGllcy5jcy5oZWxzaW5raS5maS9leGFtcGxlYXBwL3NwYS4gCgA7BiAtPiAATwc6IFNlbmRzAGYFIAoKCgo&s=default
+Link to Websequence: https://www.websequencediagrams.com/cgi-bin/cdraw?lz=CnRpdGxlIFNQQSBzZXF1ZW5jZURpYWdyYW0KCgpVc2VyIC0-PkJyb3dzZXIgOiBBY2Nlc3NlcyAvZXhhbXBsZWFwcC9zcGEKABsILT4-U2VydgAoBUdFVAAYECAoSFRNTCBmaWxlKQoAIgcAVA1SZXNwb25kcyB3aXRoIAApCSkKADooLmpzIChKYXZhU2NyaXB0AD8sLmpzAEEmbWFpbi5jc3MgKENTUwCBJCkALggAgSUmZGF0YS5qc29uIChKU09OIG5vdGVzAIIQJAAlCSBkYXRhAIIrDQCDSwU6IFJlbmRlcnMgYW5kIGRpc3BsYXlzIHRoZQBeBgoKCg&s=default
+SPA sequenceDiagram
 
-title SPA 
+participant browser
+participant server
+participant user
 
-Browser -> Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa. 
-Server -> Browser: Sends SPA  
+User ->>Browser : Accesses /exampleapp/spa
+Browser ->>Server : GET /exampleapp/spa (HTML file)
+Server ->>Browser : Responds with spa (HTML)
 
+Browser ->>Server : GET /exampleapp/spa.js (JavaScript file)
+Server ->>Browser : Responds with spa.js
+
+Browser ->>Server : GET /exampleapp/main.css (CSS file)
+Server ->>Browser : Responds with main.css
+
+Browser ->>Server : GET /exampleapp/data.json (JSON notes)
+Server ->>Browser : Responds with JSON note data
+
+Browser ->>User : Renders and displays the notes
 
